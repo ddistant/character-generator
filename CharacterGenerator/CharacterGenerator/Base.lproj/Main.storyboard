@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pQp-G5-B7D">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Root View Controller-->
@@ -43,12 +44,52 @@
                     <view key="view" contentMode="scaleToFill" id="qE9-18-ikn">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE JOKER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66Q-XC-KdS">
+                                <rect key="frame" x="254" y="37" width="93" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thejoker" translatesAutoresizingMaskIntoConstraints="NO" id="5et-bD-5Jj">
+                                <rect key="frame" x="180" y="75" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="6dJ-9Y-mx1"/>
+                                    <constraint firstAttribute="width" constant="240" id="Qu2-QB-Npm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XmZ-WL-Ib2">
+                                <rect key="frame" x="45" y="325" width="528" height="207"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="5eS-Wu-LSQ"/>
+                                    <constraint firstAttribute="height" constant="207" id="nBm-Q8-1TB"/>
+                                </constraints>
+                                <string key="text">The Joker's main characteristic is his apparent insanity, although he is not described as having any particular psychological disorder. Like a psychopath, he lacks empathy, a conscience, and concern over right and wrong. In A Serious House on Serious Earth, the Joker is described as capable of processing outside sensory information only by adapting to it. This enables him to create a new personality every day (depending on what would benefit him) and explains why, at different times, he is a mischievous clown or a psychopathic killer</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5eS-Wu-LSQ"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="66Q-XC-KdS" secondAttribute="centerX" id="2wc-wU-l5f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XmZ-WL-Ib2" secondAttribute="trailing" constant="11" id="Qh7-wE-xu3"/>
+                            <constraint firstItem="XmZ-WL-Ib2" firstAttribute="top" secondItem="5et-bD-5Jj" secondAttribute="bottom" constant="10" id="U0e-yL-SKA"/>
+                            <constraint firstItem="XmZ-WL-Ib2" firstAttribute="leading" secondItem="qE9-18-ikn" secondAttribute="leadingMargin" constant="29" id="Vcu-ZE-kgG"/>
+                            <constraint firstItem="5et-bD-5Jj" firstAttribute="top" secondItem="66Q-XC-KdS" secondAttribute="bottom" constant="17.5" id="hoh-2Z-HSM"/>
+                            <constraint firstItem="66Q-XC-KdS" firstAttribute="top" secondItem="OuV-nQ-8WI" secondAttribute="bottom" constant="17" id="mBI-ga-bQt"/>
+                            <constraint firstAttribute="centerX" secondItem="5et-bD-5Jj" secondAttribute="centerX" id="t9u-1s-nua"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BIc-Uy-yOu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1106" y="1008"/>
+            <point key="canvasLocation" x="1113" y="1157"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="J8O-9E-vPI">
@@ -85,4 +126,7 @@
             <point key="canvasLocation" x="285" y="356"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="thejoker" width="100" height="126"/>
+    </resources>
 </document>
