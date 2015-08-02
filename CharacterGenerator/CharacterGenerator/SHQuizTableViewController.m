@@ -1,18 +1,18 @@
 //
-//  SHTableViewController.m
+//  SHQuizTableViewController.m
 //  CharacterGenerator
 //
 //  Created by Daniel Distant on 8/2/15.
 //  Copyright (c) 2015 Mike Kavouras. All rights reserved.
 //
 
-#import "SHTableViewController.h"
+#import "SHQuizTableViewController.h"
 
-@interface SHTableViewController ()
+@interface SHQuizTableViewController ()
 
 @end
 
-@implementation SHTableViewController
+@implementation SHQuizTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,6 +22,10 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+- (IBAction)doneButtonTapped:(id)sender {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,17 +44,18 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 1;
+    return 3;
 }
 
-
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"characterCell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    cell.textLabel.text = @"yoooo";
+    // Configure the cell...
     
     return cell;
 }
+*/
 
 /*
 // Override to support conditional editing of the table view.

@@ -1,5 +1,5 @@
 //
-//  SHQuizViewController.h
+//  SHQuizTableViewController.h
 //  CharacterGenerator
 //
 //  Created by Daniel Distant on 8/2/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SHQuizViewController : UIViewController
+@interface SHQuizTableViewController : UITableViewController
 
 @end

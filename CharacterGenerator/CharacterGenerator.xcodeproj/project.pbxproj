@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		227B51241B6ED32E00707796 /* SHQuizTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 227B51231B6ED32E00707796 /* SHQuizTableViewController.m */; };
 		22E5A0F71B6E9883007199BA /* SHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E5A0F61B6E9883007199BA /* SHTableViewController.m */; };
 		22E5A0FA1B6E98A3007199BA /* SHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E5A0F91B6E98A3007199BA /* SHNavigationController.m */; };
 		22E5A0FD1B6E98D8007199BA /* SHDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E5A0FC1B6E98D8007199BA /* SHDetailViewController.m */; };
-		22E5A1001B6E98F4007199BA /* SHQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E5A0FF1B6E98F4007199BA /* SHQuizViewController.m */; };
 		8D7B0FFB1B6E6FC6003F4FB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B0FFA1B6E6FC6003F4FB8 /* main.m */; };
 		8D7B0FFE1B6E6FC6003F4FB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B0FFD1B6E6FC6003F4FB8 /* AppDelegate.m */; };
 		8D7B10041B6E6FC6003F4FB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7B10021B6E6FC6003F4FB8 /* Main.storyboard */; };
@@ -30,14 +30,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		227B51221B6ED32D00707796 /* SHQuizTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHQuizTableViewController.h; sourceTree = "<group>"; };
+		227B51231B6ED32E00707796 /* SHQuizTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHQuizTableViewController.m; sourceTree = "<group>"; };
 		22E5A0F51B6E9883007199BA /* SHTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTableViewController.h; sourceTree = "<group>"; };
 		22E5A0F61B6E9883007199BA /* SHTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTableViewController.m; sourceTree = "<group>"; };
 		22E5A0F81B6E98A3007199BA /* SHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNavigationController.h; sourceTree = "<group>"; };
 		22E5A0F91B6E98A3007199BA /* SHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNavigationController.m; sourceTree = "<group>"; };
 		22E5A0FB1B6E98D8007199BA /* SHDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDetailViewController.h; sourceTree = "<group>"; };
 		22E5A0FC1B6E98D8007199BA /* SHDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHDetailViewController.m; sourceTree = "<group>"; };
-		22E5A0FE1B6E98F4007199BA /* SHQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHQuizViewController.h; sourceTree = "<group>"; };
-		22E5A0FF1B6E98F4007199BA /* SHQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHQuizViewController.m; sourceTree = "<group>"; };
 		8D7B0FF51B6E6FC6003F4FB8 /* CharacterGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CharacterGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D7B0FF91B6E6FC6003F4FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D7B0FFA1B6E6FC6003F4FB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -98,8 +98,8 @@
 				22E5A0F61B6E9883007199BA /* SHTableViewController.m */,
 				22E5A0FB1B6E98D8007199BA /* SHDetailViewController.h */,
 				22E5A0FC1B6E98D8007199BA /* SHDetailViewController.m */,
-				22E5A0FE1B6E98F4007199BA /* SHQuizViewController.h */,
-				22E5A0FF1B6E98F4007199BA /* SHQuizViewController.m */,
+				227B51221B6ED32D00707796 /* SHQuizTableViewController.h */,
+				227B51231B6ED32E00707796 /* SHQuizTableViewController.m */,
 				8D7B10021B6E6FC6003F4FB8 /* Main.storyboard */,
 				8D7B10051B6E6FC6003F4FB8 /* Images.xcassets */,
 				8D7B10071B6E6FC6003F4FB8 /* LaunchScreen.xib */,
@@ -234,8 +234,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22E5A1001B6E98F4007199BA /* SHQuizViewController.m in Sources */,
 				8D7B0FFE1B6E6FC6003F4FB8 /* AppDelegate.m in Sources */,
+				227B51241B6ED32E00707796 /* SHQuizTableViewController.m in Sources */,
 				22E5A0F71B6E9883007199BA /* SHTableViewController.m in Sources */,
 				22E5A0FD1B6E98D8007199BA /* SHDetailViewController.m in Sources */,
 				22E5A0FA1B6E98A3007199BA /* SHNavigationController.m in Sources */,
