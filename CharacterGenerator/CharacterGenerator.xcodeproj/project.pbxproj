@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22E5A0F71B6E9883007199BA /* SHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E5A0F61B6E9883007199BA /* SHTableViewController.m */; };
+		22E5A0FA1B6E98A3007199BA /* SHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E5A0F91B6E98A3007199BA /* SHNavigationController.m */; };
+		22E5A0FD1B6E98D8007199BA /* SHDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E5A0FC1B6E98D8007199BA /* SHDetailViewController.m */; };
+		22E5A1001B6E98F4007199BA /* SHQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E5A0FF1B6E98F4007199BA /* SHQuizViewController.m */; };
 		8D7B0FFB1B6E6FC6003F4FB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B0FFA1B6E6FC6003F4FB8 /* main.m */; };
 		8D7B0FFE1B6E6FC6003F4FB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B0FFD1B6E6FC6003F4FB8 /* AppDelegate.m */; };
-		8D7B10011B6E6FC6003F4FB8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B10001B6E6FC6003F4FB8 /* ViewController.m */; };
 		8D7B10041B6E6FC6003F4FB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7B10021B6E6FC6003F4FB8 /* Main.storyboard */; };
 		8D7B10061B6E6FC6003F4FB8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D7B10051B6E6FC6003F4FB8 /* Images.xcassets */; };
 		8D7B10091B6E6FC6003F4FB8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D7B10071B6E6FC6003F4FB8 /* LaunchScreen.xib */; };
@@ -27,13 +30,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22E5A0F51B6E9883007199BA /* SHTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTableViewController.h; sourceTree = "<group>"; };
+		22E5A0F61B6E9883007199BA /* SHTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTableViewController.m; sourceTree = "<group>"; };
+		22E5A0F81B6E98A3007199BA /* SHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNavigationController.h; sourceTree = "<group>"; };
+		22E5A0F91B6E98A3007199BA /* SHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNavigationController.m; sourceTree = "<group>"; };
+		22E5A0FB1B6E98D8007199BA /* SHDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDetailViewController.h; sourceTree = "<group>"; };
+		22E5A0FC1B6E98D8007199BA /* SHDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHDetailViewController.m; sourceTree = "<group>"; };
+		22E5A0FE1B6E98F4007199BA /* SHQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHQuizViewController.h; sourceTree = "<group>"; };
+		22E5A0FF1B6E98F4007199BA /* SHQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHQuizViewController.m; sourceTree = "<group>"; };
 		8D7B0FF51B6E6FC6003F4FB8 /* CharacterGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CharacterGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D7B0FF91B6E6FC6003F4FB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D7B0FFA1B6E6FC6003F4FB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D7B0FFC1B6E6FC6003F4FB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8D7B0FFD1B6E6FC6003F4FB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8D7B0FFF1B6E6FC6003F4FB8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8D7B10001B6E6FC6003F4FB8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8D7B10031B6E6FC6003F4FB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D7B10051B6E6FC6003F4FB8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8D7B10081B6E6FC6003F4FB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -83,8 +92,14 @@
 			children = (
 				8D7B0FFC1B6E6FC6003F4FB8 /* AppDelegate.h */,
 				8D7B0FFD1B6E6FC6003F4FB8 /* AppDelegate.m */,
-				8D7B0FFF1B6E6FC6003F4FB8 /* ViewController.h */,
-				8D7B10001B6E6FC6003F4FB8 /* ViewController.m */,
+				22E5A0F81B6E98A3007199BA /* SHNavigationController.h */,
+				22E5A0F91B6E98A3007199BA /* SHNavigationController.m */,
+				22E5A0F51B6E9883007199BA /* SHTableViewController.h */,
+				22E5A0F61B6E9883007199BA /* SHTableViewController.m */,
+				22E5A0FB1B6E98D8007199BA /* SHDetailViewController.h */,
+				22E5A0FC1B6E98D8007199BA /* SHDetailViewController.m */,
+				22E5A0FE1B6E98F4007199BA /* SHQuizViewController.h */,
+				22E5A0FF1B6E98F4007199BA /* SHQuizViewController.m */,
 				8D7B10021B6E6FC6003F4FB8 /* Main.storyboard */,
 				8D7B10051B6E6FC6003F4FB8 /* Images.xcassets */,
 				8D7B10071B6E6FC6003F4FB8 /* LaunchScreen.xib */,
@@ -219,8 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D7B10011B6E6FC6003F4FB8 /* ViewController.m in Sources */,
+				22E5A1001B6E98F4007199BA /* SHQuizViewController.m in Sources */,
 				8D7B0FFE1B6E6FC6003F4FB8 /* AppDelegate.m in Sources */,
+				22E5A0F71B6E9883007199BA /* SHTableViewController.m in Sources */,
+				22E5A0FD1B6E98D8007199BA /* SHDetailViewController.m in Sources */,
+				22E5A0FA1B6E98A3007199BA /* SHNavigationController.m in Sources */,
 				8D7B0FFB1B6E6FC6003F4FB8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,7 +366,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CharacterGenerator/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -359,7 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CharacterGenerator/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -418,6 +436,7 @@
 				8D7B101A1B6E6FC6003F4FB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D7B101B1B6E6FC6003F4FB8 /* Build configuration list for PBXNativeTarget "CharacterGeneratorTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +445,7 @@
 				8D7B101D1B6E6FC6003F4FB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
