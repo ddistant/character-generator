@@ -7,6 +7,9 @@
 //
 
 #import "SHTableViewController.h"
+#import "CharacterManager.h"
+#import "SHCharacter.h"
+
 
 @interface SHTableViewController ()
 
@@ -17,11 +20,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    SHCharacter *superheroTest = [[SHCharacter alloc] init];
+    [[CharacterManager sharedCharacterManager].characters addObject:superheroTest];
+    superheroTest.name = @"DudeBroMan";
+    superheroTest.age = @"37";
+    superheroTest.city = @"Paris";
+    superheroTest.isGood = YES;
+    superheroTest.abilities = @"Super speed, flight, super strength, super annoyance";
+    superheroTest.bio = @"DudeBroMan is a super kinda guy.";
+    superheroTest.image = [UIImage imageNamed:@"superheroImage"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,22 +39,24 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
+
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 1;
+    
+    return [CharacterManager sharedCharacterManager].characters.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"characterCell" forIndexPath:indexPath];
     
-    cell.textLabel.text = @"yoooo";
+    SHCharacter *superheroTest = [[SHCharacter alloc] init];
+    
+    cell.textLabel.text = superheroTest.name;
+    cell.imageView.image = superheroTest.image;
+    
     
     return cell;
 }

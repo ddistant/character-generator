@@ -7,6 +7,9 @@
 //
 
 #import "SHDetailViewController.h"
+#import "CharacterManager.h"
+#import "SHCharacter.h"
+
 
 @interface SHDetailViewController ()
 
@@ -16,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
 }
 
 - (void)didReceiveMemoryWarning {
