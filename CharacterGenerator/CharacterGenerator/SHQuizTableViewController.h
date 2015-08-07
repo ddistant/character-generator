@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SHQuizTableViewController : UITableViewController
+@interface SHQuizTableViewController : UITableViewController <UIPickerViewDataSource,UIPickerViewDelegate>
+@property (weak, nonatomic) IBOutlet UIPickerView *powerPicker;
+@property (weak, nonatomic) IBOutlet UIPickerView *originPicker;
+@property (strong, nonatomic) NSArray *powerArray;
+@property (strong, nonatomic) NSArray *originArray;
+@property (nonatomic) NSString *power;
+@property (nonatomic) NSString *origin;
 
 @end

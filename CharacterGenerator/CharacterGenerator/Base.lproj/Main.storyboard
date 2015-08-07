@@ -3,9 +3,10 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Root View Controller-->
         <scene sceneID="Bz2-FD-haL">
             <objects>
                 <tableViewController id="jAH-50-SLX" customClass="SHTableViewController" sceneMemberID="viewController">
@@ -52,10 +53,10 @@
             </objects>
             <point key="canvasLocation" x="1126" y="303"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Quiz Table View Controller-->
         <scene sceneID="98Y-t5-scl">
             <objects>
-                <tableViewController id="Rav-rS-vw9" sceneMemberID="viewController">
+                <tableViewController id="Rav-rS-vw9" customClass="SHQuizTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="8kU-gj-2Q5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="664"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,7 +92,7 @@
                                                     </variation>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zlg-Ig-LCv">
-                                                    <rect key="frame" x="48" y="78" width="46.5" height="30"/>
+                                                    <rect key="frame" x="48" y="78" width="47" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -137,6 +138,15 @@
                                                         </mask>
                                                     </variation>
                                                 </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7q-G3-O1u">
+                                                    <rect key="frame" x="285" y="716" width="46" height="30"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="finishedQuiz:" destination="Rav-rS-vw9" eventType="touchUpInside" id="sPu-YY-ylb"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.92658921869999999" green="1" blue="0.99706568969999998" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
@@ -183,6 +193,14 @@
                     </tableView>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="664"/>
+                    <connections>
+                        <outlet property="ageTextField" destination="zlg-Ig-LCv" id="QA0-Pq-Dqq"/>
+                        <outlet property="bioTextField" destination="ZPI-vt-gRt" id="m7a-SX-Sfo"/>
+                        <outlet property="goodOrEvilControl" destination="aWx-QE-Eas" id="VaJ-MS-xtY"/>
+                        <outlet property="nameTextField" destination="g3E-nf-Xso" id="jt8-hc-2Bt"/>
+                        <outlet property="originPicker" destination="7Kz-SL-vlc" id="921-gu-STk"/>
+                        <outlet property="powerPicker" destination="4ha-BN-1fL" id="av8-95-UaO"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fqu-GA-MXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

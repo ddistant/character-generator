@@ -52,10 +52,11 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"characterCell" forIndexPath:indexPath];
     
-    SHCharacter *superheroTest = [[SHCharacter alloc] init];
     
-    cell.textLabel.text = superheroTest.name;
-    cell.imageView.image = superheroTest.image;
+    SHCharacter *character = [[CharacterManager sharedCharacterManager].characters objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = character.name;
+    
     
     
     return cell;

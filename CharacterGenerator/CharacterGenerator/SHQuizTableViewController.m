@@ -11,6 +11,11 @@
 #import "SHCharacter.h"
 
 @interface SHQuizTableViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *ageTextField;
+
+@property (weak, nonatomic) IBOutlet UISegmentedControl *goodOrEvilControl;
+@property (weak, nonatomic) IBOutlet UITextField *bioTextField;
 
 @end
 
@@ -19,6 +24,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.originArray = @[@"San Francisco",
+                         @"New York City",
+                         @"Los Angeles",
+                         @"Boston",
+                         @"Tel Aviv",
+                         @"London",
+                         @"Chicago",
+                         @"Seattle",
+                         @"Berlin",
+                         @"Singapore"];
+    self.powerArray = @[
+                        @"Super-Strength",
+                        @"Super-Speed",
+                        @"Laser Vision",
+                        @"Stretchiness",
+                        @"Shape-Shifting",
+                        @"Pyrokinesis",
+                        @"Electrokinesis",
+                        @"Teleportation",
+                        @"Mike",
+                        @"Water Bending"
+                        ];
     
     
 }
@@ -44,6 +71,53 @@
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
     return 3;
+}
+- (IBAction)finishedQuiz:(id)sender {
+    SHCharacter *character = [[SHCharacter alloc ]init];
+    character.name = self.nameTextField.text;
+    character.age = self.ageTextField.text;
+    character.abilities = self.power;
+    character.bio = self.bioTextField.text;
+    character.city = self.origin;
+    
+    
+    
+    [[CharacterManager sharedCharacterManager].characters addObject:character];
+    
+    
+}
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return 1;
+}
+
+// returns the # of rows in each component..
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent: (NSInteger)component {
+    return self.originArray.count;
+}
+
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row   forComponent:(NSInteger)component {
+    
+    if (pickerView == self.powerPicker) {
+        
+        return [self.powerArray objectAtIndex:row];
+    }
+    else if (pickerView == self.originPicker) {
+        
+        return [self.originArray objectAtIndex:row];
+    }
+    return nil;
+}
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row   inComponent:(NSInteger)component {
+    if (pickerView == self.powerPicker) {
+        self.power = [self.powerArray objectAtIndex:row];
+        
+    }
+    else if (pickerView == self.originPicker) {
+        
+        self.origin = [self.originArray objectAtIndex:row];
+        // second picker stuff
+    }
 }
 
 /*
