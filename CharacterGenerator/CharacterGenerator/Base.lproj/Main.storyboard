@@ -40,83 +40,95 @@
                             <outlet property="delegate" destination="jAH-50-SLX" id="t8b-IR-Pfx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="FDf-3Y-h8o">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dmd-t9-N59">
+                    <navigationItem key="navigationItem" title="Root View Controller" id="fMH-E5-p5W">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="DXA-Ob-WRU">
                             <connections>
-                                <segue destination="UAq-q6-DGW" kind="presentation" id="doi-NK-0wI"/>
+                                <segue destination="Rav-rS-vw9" kind="presentation" id="i2P-Vn-eAY"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XxB-DZ-ksT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="997" y="356"/>
+            <point key="canvasLocation" x="1126" y="303"/>
         </scene>
-        <!--Quiz Table View Controller-->
-        <scene sceneID="0pZ-Nt-u0n">
+        <!--Table View Controller-->
+        <scene sceneID="98Y-t5-scl">
             <objects>
-                <tableViewController id="Jka-gG-KRo" customClass="SHQuizTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="QAa-aM-20w">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <tableViewController id="Rav-rS-vw9" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="8kU-gj-2Q5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="664"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="Bvu-sa-MH5">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Title" id="CAW-DN-Wdu">
+                                    <barButtonItem key="leftBarButtonItem" systemItem="done" id="lKN-Ad-pma"/>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
                         <sections>
-                            <tableViewSection id="i2E-aD-VNu">
+                            <tableViewSection id="YlE-wb-XBC">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="135" id="c22-4w-rLp">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="900" id="326-js-kLH">
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c22-4w-rLp" id="bSe-iq-ZBr">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="326-js-kLH" id="8td-KV-Aro">
                                             <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="119" id="NpX-xq-ldp">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NpX-xq-ldp" id="d7b-p4-kdH">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="1Uw-N8-7SO">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Uw-N8-7SO" id="F0Y-Dr-0id">
-                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g3E-nf-Xso">
+                                                    <rect key="frame" x="76" y="43" width="318" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zlg-Ig-LCv">
+                                                    <rect key="frame" x="76" y="93" width="97" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ha-BN-1fL">
+                                                    <rect key="frame" x="-8" y="241" width="600" height="162"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <accessibilityTraits key="traits" none="YES" image="YES"/>
+                                                    </accessibility>
+                                                </pickerView>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="fill" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ffL-22-Jc6">
+                                                    <rect key="frame" x="76" y="139" width="387" height="30"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Kz-SL-vlc">
+                                                    <rect key="frame" x="-8" y="411" width="600" height="162"/>
+                                                </pickerView>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aWx-QE-Eas">
+                                                    <rect key="frame" x="76" y="205" width="387" height="29"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <segments>
+                                                        <segment title="First"/>
+                                                        <segment title="Second"/>
+                                                    </segments>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.92658921869999999" green="1" blue="0.99706568969999998" alpha="1" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
                         <connections>
-                            <outlet property="dataSource" destination="Jka-gG-KRo" id="nEB-hU-WJI"/>
-                            <outlet property="delegate" destination="Jka-gG-KRo" id="wlo-da-t1j"/>
+                            <outlet property="dataSource" destination="Rav-rS-vw9" id="ZJz-as-uAg"/>
+                            <outlet property="delegate" destination="Rav-rS-vw9" id="Z2D-eU-jrn"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="mVa-HF-mAs">
-                        <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="vlO-kH-czL">
-                            <connections>
-                                <action selector="doneButtonTapped:" destination="Jka-gG-KRo" id="nJc-qn-2AK"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="664"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LA0-53-0Ud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fqu-GA-MXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2334" y="356"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="ueu-ky-XFH">
-            <objects>
-                <navigationController id="UAq-q6-DGW" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rOr-Ei-7eM">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="Jka-gG-KRo" kind="relationship" relationship="rootViewController" id="zkW-Gv-0oQ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e64-Hn-nlp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1660" y="356"/>
+            <point key="canvasLocation" x="1821" y="310"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="sGh-5U-KBr">
@@ -134,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BIc-Uy-yOu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="997" y="1011"/>
+            <point key="canvasLocation" x="1113" y="1157"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4as-sW-SJq">
