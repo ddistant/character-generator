@@ -64,42 +64,100 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="326-js-kLH" id="8td-KV-Aro">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g3E-nf-Xso">
-                                                    <rect key="frame" x="76" y="43" width="318" height="30"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g3E-nf-Xso">
+                                                    <rect key="frame" x="48" y="28" width="504" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="zL2-1W-wXr"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="zL2-1W-wXr"/>
+                                                        </mask>
+                                                    </variation>
+                                                </textField>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zlg-Ig-LCv">
+                                                    <rect key="frame" x="48" y="78" width="46.5" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zlg-Ig-LCv">
-                                                    <rect key="frame" x="76" y="93" width="97" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ha-BN-1fL">
-                                                    <rect key="frame" x="-8" y="241" width="600" height="162"/>
+                                                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ha-BN-1fL">
+                                                    <rect key="frame" x="48" y="296" width="504" height="162"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <accessibility key="accessibilityConfiguration">
                                                         <accessibilityTraits key="traits" none="YES" image="YES"/>
                                                     </accessibility>
                                                 </pickerView>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="fill" borderStyle="roundedRect" placeholder="Bio" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ffL-22-Jc6">
-                                                    <rect key="frame" x="76" y="139" width="387" height="30"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Kz-SL-vlc">
-                                                    <rect key="frame" x="-8" y="411" width="600" height="162"/>
-                                                </pickerView>
-                                                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aWx-QE-Eas">
-                                                    <rect key="frame" x="76" y="205" width="387" height="29"/>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aWx-QE-Eas">
+                                                    <rect key="frame" x="48" y="128" width="504" height="29"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <segments>
-                                                        <segment title="First"/>
-                                                        <segment title="Second"/>
+                                                        <segment title="Good"/>
+                                                        <segment title="Evil"/>
                                                     </segments>
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </segmentedControl>
+                                                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Kz-SL-vlc">
+                                                    <rect key="frame" x="48" y="478" width="504" height="162"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </pickerView>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert Character Bio Here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZPI-vt-gRt">
+                                                    <rect key="frame" x="48" y="176" width="504" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="5Ep-M4-4vs"/>
+                                                        <constraint firstAttribute="height" constant="100" id="Cxh-Qz-PAs"/>
+                                                        <constraint firstAttribute="width" constant="100" id="FKF-k3-Us3"/>
+                                                        <constraint firstAttribute="height" constant="100" id="KM8-KO-6De"/>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="350" id="hCe-R6-r3C"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="k7L-Py-fLe"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="5Ep-M4-4vs"/>
+                                                            <exclude reference="Cxh-Qz-PAs"/>
+                                                            <exclude reference="FKF-k3-Us3"/>
+                                                            <exclude reference="hCe-R6-r3C"/>
+                                                            <exclude reference="k7L-Py-fLe"/>
+                                                        </mask>
+                                                    </variation>
+                                                </textField>
                                             </subviews>
                                             <color key="backgroundColor" red="0.92658921869999999" green="1" blue="0.99706568969999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="7Kz-SL-vlc" secondAttribute="trailing" constant="40" id="2AP-Xy-Wdi"/>
+                                                <constraint firstItem="aWx-QE-Eas" firstAttribute="leading" secondItem="8td-KV-Aro" secondAttribute="leadingMargin" constant="40" id="7lA-QJ-Lzv"/>
+                                                <constraint firstItem="g3E-nf-Xso" firstAttribute="top" secondItem="8td-KV-Aro" secondAttribute="topMargin" constant="20" id="B0U-JB-DZ0"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="4ha-BN-1fL" secondAttribute="trailing" constant="40" id="DIJ-w5-aUT"/>
+                                                <constraint firstItem="7Kz-SL-vlc" firstAttribute="top" secondItem="4ha-BN-1fL" secondAttribute="bottom" constant="20" id="FCk-aJ-Lyt"/>
+                                                <constraint firstItem="ZPI-vt-gRt" firstAttribute="top" secondItem="aWx-QE-Eas" secondAttribute="bottom" constant="20" id="FdD-6H-6X7"/>
+                                                <constraint firstItem="aWx-QE-Eas" firstAttribute="top" secondItem="zlg-Ig-LCv" secondAttribute="bottom" constant="20" id="KwP-Gs-3nw"/>
+                                                <constraint firstItem="zlg-Ig-LCv" firstAttribute="leading" secondItem="8td-KV-Aro" secondAttribute="leadingMargin" constant="40" id="MYA-Jd-8d9"/>
+                                                <constraint firstItem="zlg-Ig-LCv" firstAttribute="top" secondItem="g3E-nf-Xso" secondAttribute="bottom" constant="20" id="NBB-Ax-1Fe"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="aWx-QE-Eas" secondAttribute="trailing" constant="40" id="RFg-hj-APm"/>
+                                                <constraint firstItem="4ha-BN-1fL" firstAttribute="top" secondItem="ZPI-vt-gRt" secondAttribute="bottom" constant="20" id="VdJ-Yx-lJd"/>
+                                                <constraint firstItem="g3E-nf-Xso" firstAttribute="leading" secondItem="8td-KV-Aro" secondAttribute="leadingMargin" constant="40" id="XfD-oI-lMt"/>
+                                                <constraint firstItem="4ha-BN-1fL" firstAttribute="top" secondItem="ZPI-vt-gRt" secondAttribute="bottom" constant="20" id="Zok-lr-Via"/>
+                                                <constraint firstItem="7Kz-SL-vlc" firstAttribute="leading" secondItem="8td-KV-Aro" secondAttribute="leadingMargin" constant="40" id="aN7-wj-FBq"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="g3E-nf-Xso" secondAttribute="trailing" constant="40" id="cHk-5e-RMl"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ZPI-vt-gRt" secondAttribute="trailing" constant="40" id="czs-NF-ooe"/>
+                                                <constraint firstItem="7Kz-SL-vlc" firstAttribute="top" secondItem="4ha-BN-1fL" secondAttribute="bottom" constant="40" id="dFf-i5-LaW"/>
+                                                <constraint firstItem="ZPI-vt-gRt" firstAttribute="leading" secondItem="8td-KV-Aro" secondAttribute="leadingMargin" constant="40" id="g2S-Qm-7E4"/>
+                                                <constraint firstItem="4ha-BN-1fL" firstAttribute="leading" secondItem="8td-KV-Aro" secondAttribute="leadingMargin" constant="40" id="jBH-py-8ZI"/>
+                                                <constraint firstItem="ZPI-vt-gRt" firstAttribute="leading" secondItem="8td-KV-Aro" secondAttribute="leadingMargin" constant="40" id="s5H-cu-vI2"/>
+                                                <constraint firstItem="ZPI-vt-gRt" firstAttribute="top" secondItem="aWx-QE-Eas" secondAttribute="bottom" constant="20" id="vgV-HD-Kiw"/>
+                                                <constraint firstItem="g3E-nf-Xso" firstAttribute="top" secondItem="8td-KV-Aro" secondAttribute="topMargin" constant="20" id="zbO-4s-jXG"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="FdD-6H-6X7"/>
+                                                    <exclude reference="s5H-cu-vI2"/>
+                                                    <exclude reference="VdJ-Yx-lJd"/>
+                                                    <exclude reference="dFf-i5-LaW"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -115,7 +173,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fqu-GA-MXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1821" y="310"/>
+            <point key="canvasLocation" x="1850" y="289"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="sGh-5U-KBr">
