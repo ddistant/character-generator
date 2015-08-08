@@ -15,5 +15,6 @@
 @property (strong, nonatomic) NSArray *originArray;
 @property (nonatomic) NSString *power;
 @property (nonatomic) NSString *origin;
+@property (nonatomic) BOOL characterIsGood;
 
 @end

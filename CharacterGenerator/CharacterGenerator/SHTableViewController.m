@@ -42,8 +42,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"characterCell" forIndexPath:indexPath];
+    SHCharacter *character = [[CharacterManager sharedCharacterManager].characters objectAtIndex:indexPath.row];
+    cell.textLabel.text = character.name;
     
     return cell;
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [self.tableView reloadData];
 }
 
 /*
