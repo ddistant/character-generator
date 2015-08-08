@@ -45,11 +45,27 @@
                         @"Mike",
                         @"Water Bending"
                         ];
+    self.powerPicker.dataSource = self;
+    self.powerPicker.delegate = self;
+    self.originPicker.dataSource = self;
+    self.originPicker.delegate = self;
     
     
 }
 
 - (IBAction)doneButtonTapped:(id)sender {
+    
+    SHCharacter *character = [[SHCharacter alloc] init];
+    character.name = self.nameTextField.text;
+    character.power = self.power;
+    character.city = self.origin;
+    character.age = self.ageTextField.text;
+    character.isGood = self.characterIsGood;
+    
+    
+    [[CharacterManager sharedCharacterManager].characters addObject:character];
+
+    
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -107,17 +123,18 @@
 }
 - (IBAction)isGoodSegmentedControlChanged:(id)sender {
     
-    SHCharacter *character = [[SHCharacter alloc] init];
+    
     
     if (self.isGoodSegementedControl == 0) {
         
-        character.isGood = YES;
+         self.characterIsGood = YES;
         
     } else {
         
-        character.isGood = NO;
+         self.characterIsGood = NO;
     }
-}
+    }
+
 
 
 
