@@ -14,7 +14,7 @@
 
 @property (nonatomic) NSString *name;
 @property (nonatomic) NSString *age;
-@property (nonatomic) NSString *abilities;
+@property (nonatomic) NSString *power;
 @property (nonatomic) BOOL *isGood;
 @property (nonatomic) UIImage *image;
 @property (nonatomic) NSString *bio;

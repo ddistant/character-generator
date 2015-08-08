@@ -20,15 +20,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    SHCharacter *superheroTest = [[SHCharacter alloc] init];
-    [[CharacterManager sharedCharacterManager].characters addObject:superheroTest];
-    superheroTest.name = @"DudeBroMan";
-    superheroTest.age = @"37";
-    superheroTest.city = @"Paris";
-    superheroTest.isGood = YES;
-    superheroTest.abilities = @"Super speed, flight, super strength, super annoyance";
-    superheroTest.bio = @"DudeBroMan is a super kinda guy.";
-    superheroTest.image = [UIImage imageNamed:@"superheroImage"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,13 +42,6 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"characterCell" forIndexPath:indexPath];
-    
-    
-    SHCharacter *character = [[CharacterManager sharedCharacterManager].characters objectAtIndex:indexPath.row];
-    
-    cell.textLabel.text = character.name;
-    
-    
     
     return cell;
 }
