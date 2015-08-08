@@ -7,8 +7,6 @@
 //
 
 #import "SHQuizTableViewController.h"
-#import "CharacterManager.h"
-#import "SHCharacter.h"
 
 @interface SHQuizTableViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
@@ -24,6 +22,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
     
     self.originArray = @[@"San Francisco",
                          @"New York City",
@@ -57,7 +57,9 @@
 
 - (IBAction)doneButtonTapped:(id)sender {
     
-    SHCharacter *character = [[SHCharacter alloc] init];
+    SHCharacter *character = [[SHCharacter alloc]init];
+    
+    character.image = self.characterImage;
     character.name = self.nameTextField.text;
     character.power = self.power;
     character.city = self.origin;
@@ -152,6 +154,9 @@
                             
                             ];
     NSInteger index = [self.characterButtons indexOfObject:sender];
+    self.characterImage = [UIImage imageNamed:characters[index]];
+    
+    
     
     
 }

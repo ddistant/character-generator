@@ -9,7 +9,7 @@
 #import "SHTableViewController.h"
 #import "CharacterManager.h"
 #import "SHCharacter.h"
-
+#import "SHDetailViewController.h"
 
 @interface SHTableViewController ()
 
@@ -50,6 +50,22 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     [self.tableView reloadData];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"preparing...");
+    
+    if ([segue.destinationViewController isKindOfClass:[SHDetailViewController class]]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        SHCharacter *character = [[CharacterManager sharedCharacterManager].characters objectAtIndex:indexPath.row];
+        
+        
+        
+        SHDetailViewController *dvc = segue.destinationViewController;
+        dvc.detailNameLabel.text = character.name;
+    }
+
+    
 }
 
 /*
