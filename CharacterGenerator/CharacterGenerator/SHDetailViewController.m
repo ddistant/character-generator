@@ -25,6 +25,7 @@
 //    self.detailOriginLabel.text =
 //    self.detailPowerLabel.text =
 //    self.detailImageView.image =
+//    self.detailSideLabel.text =
 
 }
 

@@ -16,5 +16,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *detailAgeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *detailOriginLabel;
 @property (weak, nonatomic) IBOutlet UILabel *detailPowerLabel;
+@property (weak, nonatomic) IBOutlet UILabel *detailSideLabel;
 
 @end

@@ -14,7 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *ageTextField;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *isGoodSegementedControl;
-@property (weak, nonatomic) IBOutlet UITextField *bioTextField;
+
 
 @end
 
