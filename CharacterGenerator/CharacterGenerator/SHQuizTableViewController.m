@@ -13,7 +13,7 @@
 @interface SHQuizTableViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *ageTextField;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *isGoodControl;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *isGoodSegementedControl;
 @property (weak, nonatomic) IBOutlet UITextField *bioTextField;
 
 @end
@@ -103,6 +103,19 @@
         
         self.origin = [self.originArray objectAtIndex:row];
 
+    }
+}
+- (IBAction)isGoodSegmentedControlChanged:(id)sender {
+    
+    SHCharacter *character = [[SHCharacter alloc] init];
+    
+    if (self.isGoodSegementedControl == 0) {
+        
+        character.isGood = YES;
+        
+    } else {
+        
+        character.isGood = NO;
     }
 }
 

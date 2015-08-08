@@ -19,6 +19,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+//    self.detailNameLabel.text =
+//    self.detailAgeLabel.text =
+//    self.detailOriginLabel.text =
+//    self.detailPowerLabel.text =
+//    self.detailImageView.image =
 
 }
 

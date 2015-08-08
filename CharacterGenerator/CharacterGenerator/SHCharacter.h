@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "CharacterManager.h"
+#import "SHQuizTableViewController.h"
 
 
 @interface SHCharacter : NSObject
