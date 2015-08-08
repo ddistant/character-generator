@@ -151,6 +151,9 @@
                                                     <state key="normal" title="Button" image="Character 1-F">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="characterButtonTapped:" destination="Rav-rS-vw9" eventType="touchUpInside" id="tMw-mV-9GN"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LuS-eo-XSs">
                                                     <rect key="frame" x="250" y="690" width="100" height="150"/>
@@ -161,6 +164,9 @@
                                                     <state key="normal" title="Button" image="Character 2-F">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="characterButtonTapped:" destination="Rav-rS-vw9" eventType="touchUpInside" id="tUI-Lh-ebr"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4Z-CR-LiL">
                                                     <rect key="frame" x="130" y="851" width="100" height="150"/>
@@ -171,6 +177,9 @@
                                                     <state key="normal" title="Button" image="Character 4-F">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="characterButtonTapped:" destination="Rav-rS-vw9" eventType="touchUpInside" id="joY-Bo-UZs"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rn-aL-nT8">
                                                     <rect key="frame" x="250" y="850" width="100" height="150"/>
@@ -181,6 +190,9 @@
                                                     <state key="normal" title="Button" image="Character 5-F">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="characterButtonTapped:" destination="Rav-rS-vw9" eventType="touchUpInside" id="Jw6-GE-vON"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qx0-mX-DBy">
                                                     <rect key="frame" x="370" y="691" width="100" height="150"/>
@@ -191,6 +203,9 @@
                                                     <state key="normal" title="Button" image="Character 3-F">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="characterButtonTapped:" destination="Rav-rS-vw9" eventType="touchUpInside" id="G2i-CW-4v0"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qif-fH-ORp">
                                                     <rect key="frame" x="370" y="851" width="100" height="150"/>
@@ -201,6 +216,9 @@
                                                     <state key="normal" title="Button" image="Character 6-M">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="characterButtonTapped:" destination="Rav-rS-vw9" eventType="touchUpInside" id="tEP-mb-m5X"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47C-0m-vpf">
                                                     <rect key="frame" x="130" y="1011" width="100" height="150"/>
@@ -211,6 +229,9 @@
                                                     <state key="normal" title="Button" image="Character 7-M">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="characterButtonTapped:" destination="Rav-rS-vw9" eventType="touchUpInside" id="8V4-f0-Wm5"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZQ-Xd-yYC">
                                                     <rect key="frame" x="250" y="1010" width="100" height="150"/>
@@ -221,6 +242,9 @@
                                                     <state key="normal" title="Button" image="Character 8-M">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="characterButtonTapped:" destination="Rav-rS-vw9" eventType="touchUpInside" id="JEw-jQ-5n1"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIs-kS-1N9">
                                                     <rect key="frame" x="370" y="1011" width="100" height="150"/>
@@ -231,6 +255,9 @@
                                                     <state key="normal" title="Button" image="Character 9-M">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="characterButtonTapped:" destination="Rav-rS-vw9" eventType="touchUpInside" id="zAl-9q-e5E"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yqj-wb-1lM">
                                                     <rect key="frame" x="250" y="1171" width="100" height="150"/>
@@ -241,6 +268,9 @@
                                                     <state key="normal" title="Button" image="Character 10-M">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="characterButtonTapped:" destination="Rav-rS-vw9" eventType="touchUpInside" id="XPu-28-gUA"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="1" green="0.12513849129999999" blue="0.048415420739999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -319,10 +349,21 @@
                     <size key="freeformSize" width="600" height="664"/>
                     <connections>
                         <outlet property="ageTextField" destination="zlg-Ig-LCv" id="QA0-Pq-Dqq"/>
+                        <outlet property="bioTextView" destination="g5K-9N-u1x" id="9Hy-E0-Pr4"/>
                         <outlet property="isGoodSegementedControl" destination="aWx-QE-Eas" id="Y04-1H-DG1"/>
                         <outlet property="nameTextField" destination="g3E-nf-Xso" id="jt8-hc-2Bt"/>
                         <outlet property="originPicker" destination="7Kz-SL-vlc" id="921-gu-STk"/>
                         <outlet property="powerPicker" destination="4ha-BN-1fL" id="Wc2-1R-r8g"/>
+                        <outletCollection property="characterButtons" destination="sN0-Oa-PlN" id="X96-z3-9Gn"/>
+                        <outletCollection property="characterButtons" destination="LuS-eo-XSs" id="56n-mi-iqx"/>
+                        <outletCollection property="characterButtons" destination="Qx0-mX-DBy" id="dU0-Cg-wfv"/>
+                        <outletCollection property="characterButtons" destination="p4Z-CR-LiL" id="7Zf-ZP-7EA"/>
+                        <outletCollection property="characterButtons" destination="3rn-aL-nT8" id="ZcN-Tj-Al2"/>
+                        <outletCollection property="characterButtons" destination="Qif-fH-ORp" id="iyo-sl-ce7"/>
+                        <outletCollection property="characterButtons" destination="47C-0m-vpf" id="dta-P5-Ogo"/>
+                        <outletCollection property="characterButtons" destination="HZQ-Xd-yYC" id="KNJ-SM-9IJ"/>
+                        <outletCollection property="characterButtons" destination="XIs-kS-1N9" id="Qpo-Z2-TOI"/>
+                        <outletCollection property="characterButtons" destination="Yqj-wb-1lM" id="h9B-je-H7X"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fqu-GA-MXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -341,7 +382,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Character 1-F" translatesAutoresizingMaskIntoConstraints="NO" id="aP2-4l-9hV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aP2-4l-9hV">
                                 <rect key="frame" x="200" y="79" width="200" height="290"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="ByU-Gd-jYC"/>

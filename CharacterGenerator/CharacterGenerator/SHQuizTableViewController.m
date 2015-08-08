@@ -14,6 +14,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *ageTextField;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *isGoodSegementedControl;
+@property (weak, nonatomic) IBOutlet UITextView *bioTextView;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *characterButtons;
 
 
 @end
@@ -61,6 +63,7 @@
     character.city = self.origin;
     character.age = self.ageTextField.text;
     character.isGood = self.characterIsGood;
+    character.bio = self.bioTextView.text;
     
     
     [[CharacterManager sharedCharacterManager].characters addObject:character];
@@ -135,6 +138,23 @@
     }
     }
 
+- (IBAction)characterButtonTapped:(UIButton *)sender {
+    NSArray *characters = @[@"Character 1-F",
+                            @"Character 2-F",
+                            @"Character 3-F",
+                            @"Character 4-F",
+                            @"Character 5-F",
+                            @"Character 6-M",
+                            @"Character 7-M",
+                            @"Character 8-M",
+                            @"Character 9-M",
+                            @"Character 10-M"
+                            
+                            ];
+    NSInteger index = [self.characterButtons indexOfObject:sender];
+    
+    
+}
 
 
 
